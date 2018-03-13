@@ -1,0 +1,35 @@
+/*
+ Theme Name:   AHBRSC
+ Theme URI:    http://ahbrsc.com
+ Description:  NAHBRSC custom theme
+ Author:       Matt
+ Author URI:   http://mspacecreative.com
+ Template:     Divi
+ Version:      1.0
+*/
+
+#page-container {
+	padding-top: 0!important;
+}
+
+#main-header {
+	background: none;
+	box-shadow: none;
+	padding: 20px 0;
+}
+
+#logo {
+	max-width: 320px;
+	height: auto;
+}
+
+.header-overlay:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 250px;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, .75));
+	content: '';
+	width: 100%;
+	z-index: 10;
+}
