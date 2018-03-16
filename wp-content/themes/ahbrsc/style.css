@@ -47,8 +47,12 @@
 	padding-bottom: 15px;
 }
 
-.top-footer #footer-bottom {
+.page #footer-bottom {
 	padding: 50px 0 15px;
+}
+
+.home.page #footer-bottom {
+	padding-top: 15px;
 }
 
 #main-footer {
