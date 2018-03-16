@@ -1,10 +1,4 @@
-$(function () {
-	
-	if ($('p').children('img.alignleft')) {
-		$('img.alignleft').parent().next().css('clear', 'both');
-	}
-	
-	// GENERAL FUNCTIONS
+// GENERAL FUNCTIONS
 	function footerHeight() {
 		if($(window).height() > $("#page-container").height()){
 		   $('#main-footer').height($(window).height() - $('#page-container').height());
@@ -53,5 +47,3 @@ $(function () {
 		footerHeight();
 		
 	});
-	
-});
