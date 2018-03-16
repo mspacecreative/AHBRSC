@@ -41,6 +41,7 @@ $(function () {
 		nav:true,
 		autoplay: true,
 		smartSpeed: 750,
+		dots: true,
 		});
 	});
 	
