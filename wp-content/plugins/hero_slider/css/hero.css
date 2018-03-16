@@ -153,6 +153,10 @@
 .tagline h2 {
 	font-size: 18px;
 }
+
+.tagline {
+	padding: 0 5%;
+}
 }
 
 @media (max-width: 767px) {
@@ -163,6 +167,11 @@
 
 .tagline h2 {
 	font-size: 18px;
+}
+
+.tagline {
+	padding: 0 5%;
+}
 }
 
 @media (max-width: 812px) {
