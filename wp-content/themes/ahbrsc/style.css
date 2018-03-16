@@ -32,6 +32,10 @@
 	content: '';
 }
 
+.home .page-bg-img {
+	display: none;
+}
+
 .top-footer:after {
 	position: absolute;
 	bottom: 0;
