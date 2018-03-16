@@ -33,6 +33,23 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+
+<div id="cover">
+	<div class="loader-container">
+		<i class="fa fa-spinner fa-pulse" aria-hidden="true"></i>
+	</div>
+</div>
+
+<div id="wrapper">
+
+<?php if (has_post_thumbnail( $post->ID ) ){
+    $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0]; 
+} else {
+    $image = get_option( 'my_default_pic' );
+}
+?>
+<div style="background-image: url(<?php echo $image ?>);" class="page-bg-img"></div>
+
 <?php
 	$product_tour_enabled = et_builder_is_product_tour_enabled();
 	$page_container_style = $product_tour_enabled ? ' style="padding-top: 0px;"' : ''; ?>
@@ -208,7 +225,7 @@
 			<div class="container clearfix et_menu_container">
 			
 				<div style="float: left;">
-					<a href="#">
+					<a href="<?php echo home_url(); ?>">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ahbrsc-logo.png" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" />
 					</a>
 				</div>

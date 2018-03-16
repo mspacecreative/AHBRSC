@@ -21,6 +21,22 @@ function footer_scripts() {
 	wp_enqueue_script('fontawesome');
 }
 
-// ACTIONS AND FILTERS
+function content_blocks($atts, $content = null)
+{
+    return '<div class="content-block half">' . $content . '</div>';
+}
+
+/* ACF OPTIONS PAGE */
+if( function_exists('acf_add_options_sub_page') ) {
+
+	acf_add_options_sub_page('Footer');
+	
+}
+
+// ACTIONS, OPTIONS AND FILTERS
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
 add_action('init', 'footer_scripts');
+add_option( 'my_default_pic', get_stylesheet_directory_uri() . '/img/wood-frame-bg.jpg', '', 'yes' );
+
+// SHORTCODES
+add_shortcode('content_block', 'content_blocks');

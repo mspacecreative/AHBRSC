@@ -8,6 +8,7 @@
 						  	<div class="outer-hero-text-container">
 						  		<div class="inner-hero-text-container">
 						  			<h1><?php the_title(); ?></h1>
+						  			<?php the_content(); ?>
 						  			<a href="<?php the_field('hero_link'); ?>"><?php the_field('hero_button_label'); ?></a>
 						  		</div>
 						  	</div>
@@ -17,4 +18,7 @@
 	wp_reset_postdata(); 
 	?>
 </div>
-<div class="hero-next"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/hero-next.png" /></div>
+<div class="hero-next"><a href="#info-cards"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/hero-next.png" /></a></div>
+<div class="tagline">
+	<h2><?php echo bloginfo('description'); ?></h2>
+</div>
