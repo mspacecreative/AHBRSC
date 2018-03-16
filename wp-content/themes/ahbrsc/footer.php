@@ -1,3 +1,7 @@
+	</div> <!-- #et-main-area -->
+
+</div> <!-- #page-container -->
+
 <?php if ( 'on' == et_get_option( 'divi_back_to_top', 'false' ) ) : ?>
 
 	<span class="et_pb_scroll_top et-pb-icon"></span>
@@ -31,21 +35,19 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 
 				<div id="footer-bottom">
 					<div class="container clearfix">
-				<?php
-					if ( false !== et_get_option( 'show_footer_social_icons', true ) ) {
-						get_template_part( 'includes/social_icons', 'footer' );
-					}
-
-					'&copy;' echo date('Y'); _e('Atlantic Home Building & Renovation Sector Council');
-				?>
+				
+				<?php echo get_template_part('includes/footer-logos'); ?>
+				
+				<div class="credits">
+					<?php echo _('&copy; '); echo date('Y '); echo _e('Atlantic Home Building & Renovation Sector Council'); ?>
+				</div>
 					</div>	<!-- .container -->
 				</div>
 			</footer> <!-- #main-footer -->
-		</div> <!-- #et-main-area -->
 
 <?php endif; // ! is_page_template( 'page-template-blank.php' ) ?>
 
-	</div> <!-- #page-container -->
+	</div> <!-- #wrapper -->
 
 	<?php wp_footer(); ?>
 </body>

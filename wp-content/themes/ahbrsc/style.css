@@ -44,12 +44,16 @@
 
 #footer-bottom {
 	background: none;
+	padding-bottom: 15px;
+}
+
+.top-footer #footer-bottom {
 	padding: 50px 0 15px;
 }
 
 #main-footer {
 	background-color: #e9e9e9;
-	min-height: 53px;
+	min-height: 62px;
 }
 
 body {
