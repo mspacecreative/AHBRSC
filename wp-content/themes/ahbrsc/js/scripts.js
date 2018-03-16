@@ -21,11 +21,6 @@ $(function () {
 	
 	$('.hero-next img').css('bottom', $('.tagline').outerHeight() + 25);
 	
-	// FADING CONTENT ON PAGE TURN
-	$('a[href*="#0"]').click(function () {
-		$('#wrapper').fadeOut(1000);
-	});
-	
 	$('#cover').fadeOut(1250);
 	
 	// DOCUMENT READY
