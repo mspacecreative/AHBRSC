@@ -149,6 +149,10 @@
 .owl-carousel h1 {
 	font-size: 25px;
 }
+
+.tagline h2 {
+	font-size: 18px;
+}
 }
 
 @media (max-width: 767px) {
@@ -156,6 +160,9 @@
 .owl-carousel h1 {
 	font-size: 25px;
 }
+
+.tagline h2 {
+	font-size: 18px;
 }
 
 @media (max-width: 812px) {
