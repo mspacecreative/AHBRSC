@@ -157,3 +157,10 @@
 	font-size: 25px;
 }
 }
+
+@media (max-width: 812px) {
+
+.owl-prev, .owl-next {
+	display: none;
+}
+}
