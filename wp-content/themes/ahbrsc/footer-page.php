@@ -1,7 +1,7 @@
 		<div class="top-footer">
 			<div class="footer-callout">
-				<h4>Sign-up for our Residential Construction Site Manager program at no cost.</h4>
-				<a href="#">Learn More</a>
+				<h4><?php the_field('callout_text', 'options'); ?></h4>
+				<a href="<?php the_field('callout_link', 'options'); ?>"><?php the_field('callout_label', 'options'); ?></a>
 			</div>
 		</div>
 	
