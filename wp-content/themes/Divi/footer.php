@@ -30,21 +30,20 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 			<?php endif; ?>
 
 				<div id="footer-bottom">
-						<div class="container clearfix">
-					
-					<?php echo get_template_part('includes/footer-logos'); ?>
-					
-					<div class="credits">
-						<?php echo _('&copy; '); echo date('Y '); echo _e('Atlantic Home Building & Renovation Sector Council'); ?>
-					</div>
-						</div>	<!-- .container -->
-					</div>
-				</footer> <!-- #main-footer -->
-		</div> <!-- #et-main-area -->
+					<div class="container clearfix">
+				
+				<?php echo get_template_part('includes/footer-logos'); ?>
+				
+				<div class="credits">
+					<?php echo _('&copy; '); echo date('Y '); echo _e('Atlantic Home Building & Renovation Sector Council'); ?>
+				</div>
+					</div>	<!-- .container -->
+				</div>
+			</footer> <!-- #main-footer -->
 
 <?php endif; // ! is_page_template( 'page-template-blank.php' ) ?>
 
-	</div> <!-- #page-container -->
+	</div> <!-- #wrapper -->
 
 	<?php wp_footer(); ?>
 </body>
