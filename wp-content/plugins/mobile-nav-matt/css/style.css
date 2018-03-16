@@ -41,12 +41,14 @@
 	top: 0;
 	background: #d12229;
 	z-index: 999;
-	padding: 83px 0 0;
+	padding: 80px 0 0;
 	visibility: hidden;
 }
 
 .mobile-nav a {
 	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
 }
 
 .mobile-nav .menu li {

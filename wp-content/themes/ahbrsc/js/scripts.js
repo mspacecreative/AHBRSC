@@ -15,10 +15,6 @@ $(function () {
 		$(".hero-bg").height($(window).height()-($('.tagline').outerHeight()));
 	}
 	
-	function menuHeight() {
-		$("#et-top-navigation").height($('#logo').height());
-	}
-	
 	$('.hero-next img').css('bottom', $('.tagline').outerHeight() + 25);
 	
 	// FADING CONTENT ON PAGE TURN
@@ -31,7 +27,6 @@ $(function () {
 	// DOCUMENT READY
 	$(function () {
 		viewportHeight();
-		menuHeight();
 		footerHeight();
 		
 		// OWL CAROUSEL
@@ -49,7 +44,6 @@ $(function () {
 	$(window).resize(function () {
 		
 		viewportHeight();
-		menuHeight();
 		footerHeight();
 		
 	});
