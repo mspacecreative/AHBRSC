@@ -82,6 +82,10 @@
 	display: block;
 }
 
+.mobile-nav .menu ul li a {
+	padding: 15px 30px;
+}
+
 .is-active .mobile-nav, #page-container.is-active {
 	transform: translateX(-250px);
 	transition: 0.5s ease-in-out;
