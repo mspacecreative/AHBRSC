@@ -9,16 +9,16 @@ $('span.sub-toggle').click(function (){
 
 // HAMBURGER ICON ANIMATION
 $('.hamburger').click(function() {
-	$('.hamburger, body').toggleClass('is-active');
+	$('body').toggleClass('is-active');
 });
 
 $('.body-overlay').click(function() {
-	$('.hamburger, body').toggleClass('is-active');
+	$('body').toggleClass('is-active');
 });
 
 // CLOSE PANEL UPON LINK CLICK
 $('.mobile-nav li > a').click(function() {
-	$('.hamburger, body').toggleClass('is-active');
+	$('body').toggleClass('is-active');
 });
 
 // HAMBURGER VERTICAL ALIGN

@@ -109,12 +109,17 @@ body .hamburger {
 	right: 0;
 	padding: 0 0 0 10px;
 	display: table;
-	z-index: 99999;
+	z-index: 999;
 	transition: 0.5s ease-in-out;
 	border-radius: 10px 0 0 10px;
 	outline: none;
 	width: 40px;
 	height: 30px;
+}
+
+body .hamburger.hamburger--squeeze {
+	position: absolute;
+	right: 5%;
 }
 
 body .hamburger:hover {
