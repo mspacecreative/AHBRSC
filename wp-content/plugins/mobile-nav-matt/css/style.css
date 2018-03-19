@@ -17,7 +17,7 @@
 	visibility: visible;
 }
 
-.mobile-nav li.menu-item-has-children span.sub-toggle {
+.mobile-nav span.sub-toggle {
   position: absolute;
   right: 0;
   top: 0;

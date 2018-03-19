@@ -1,11 +1,11 @@
 // MOBILE NAVIGATION
 $('.mobile-nav li.menu-item-has-children').prepend('<span class="sub-toggle"><i class="fa fa-angle-down"></i></span>');
 $('span.sub-toggle').click(function (){
-  $(this).siblings(".sub-menu").slideToggle();
+  $(this).siblings('.sub-menu').slideToggle();
+  $(this).children().toggleClass('fa-angle-down fa-angle-up');
 });
-$('span.sub-toggle').click(function (){
-$(this).children().toggleClass('fa-angle-down fa-angle-up');
-});
+
+//$('li.menu-item-has-children').css('width', $('#menu-main-menu').width()-$('.sub-toggle').outerWidth());
 
 // HAMBURGER ICON ANIMATION
 $('.hamburger').click(function() {
@@ -20,8 +20,6 @@ $('.body-overlay').click(function() {
 $('.mobile-nav li > a').click(function() {
 	$('.hamburger, body').toggleClass('is-active');
 });
-
-//$('.hamburger').css('top', $('#mobile-buttons').outerHeight() + 10);
 
 // HAMBURGER VERTICAL ALIGN
 function hamburgerIcon() {

@@ -4,6 +4,8 @@ $(function () {
 		$('img.alignleft').parent().next().css('clear', 'both');
 	}
 	
+	$('.mobile-nav li.menu-item-has-children').removeClass('menu-item-has-children');
+	
 	// GENERAL FUNCTIONS
 	function footerHeight() {
 		if($(window).height() > $("#page-container").height()){
