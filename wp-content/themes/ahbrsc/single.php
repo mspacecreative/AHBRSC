@@ -34,6 +34,13 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 		<?php endwhile;
 		else:
 	?>
+	
+	<div class="page-heading-container">
+		<div class="container">
+			<h1 class="entry-title main_title"><?php the_title(); ?></h1>
+		</div>
+	</div>
+	
 	<div class="container">
 		<div id="content-area" class="clearfix">
 			<div id="left-area">
@@ -41,7 +48,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 				<?php if (et_get_option('divi_integration_single_top') <> '' && et_get_option('divi_integrate_singletop_enable') == 'on') echo(et_get_option('divi_integration_single_top')); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class( 'et_pb_post' ); ?>>
 					<?php if ( ( 'off' !== $show_default_title && $is_page_builder_used ) || ! $is_page_builder_used ) { ?>
-						<div class="et_post_meta_wrapper">
+						<!--<div class="et_post_meta_wrapper">
 							<h1 class="entry-title"><?php the_title(); ?></h1>
 
 						<?php
@@ -100,7 +107,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 										printf(
 											'<div class="et_quote_content%2$s"%3$s>
 												%1$s
-											</div> <!-- .et_quote_content -->',
+											</div>',
 											et_get_blockquote_in_content(),
 											esc_attr( $text_color_class ),
 											$inline_style
@@ -111,7 +118,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 										printf(
 											'<div class="et_link_content%3$s"%4$s>
 												<a href="%1$s" class="et_link_main_url">%2$s</a>
-											</div> <!-- .et_link_content -->',
+											</div>',
 											esc_url( et_get_link_url() ),
 											esc_html( et_get_link_url() ),
 											esc_attr( $text_color_class ),
@@ -123,8 +130,8 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 
 							endif;
 						?>
-					</div> <!-- .et_post_meta_wrapper -->
-				<?php  } ?>
+					</div> <! .et_post_meta_wrapper
+				<?php  } ?>-->
 
 					<div class="entry-content">
 					<?php
