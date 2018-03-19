@@ -18,7 +18,7 @@
 	wp_reset_postdata(); 
 	?>
 </div>
-<div class="hero-next"><a href="#info-cards"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/hero-next.png" /></a></div>
+<!--<div class="hero-next"><a href="#info-cards"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/hero-next.png" /></a></div>-->
 <div class="tagline">
 	<h2><?php echo bloginfo('description'); ?></h2>
 </div>
