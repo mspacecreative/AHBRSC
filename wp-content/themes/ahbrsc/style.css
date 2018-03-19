@@ -491,3 +491,10 @@ html #left-area {
 	background-attachment: scroll;
 }
 }
+
+@media (max-width: 320px) {
+
+.top-footer {
+	height: 125px;
+}
+}
