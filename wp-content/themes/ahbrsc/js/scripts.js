@@ -13,9 +13,9 @@ $(function () {
 		}
 	}
 	
-	/*function viewportHeight() {
+	function viewportHeight() {
 		$(".hero-bg").height($(window).height()-($('.tagline').outerHeight()));
-	}*/
+	}
 	
 	$('.hero-next img').css('bottom', $('.tagline').outerHeight() + 25);
 	
@@ -28,7 +28,7 @@ $(function () {
 	
 	// DOCUMENT READY
 	$(function () {
-		//viewportHeight();
+		viewportHeight();
 		footerHeight();
 		
 		// OWL CAROUSEL
@@ -45,7 +45,7 @@ $(function () {
 	// WINDOW RESIZING
 	$(window).resize(function () {
 		
-		//iewportHeight();
+		viewportHeight();
 		footerHeight();
 		
 	});
