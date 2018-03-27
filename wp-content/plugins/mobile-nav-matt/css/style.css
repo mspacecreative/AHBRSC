@@ -193,6 +193,26 @@ html #top-menu {
 	display: none;
 }
 
+.et_pb_column_1_4.et_pb_column .et_pb_widget:nth-child(n) {
+	width: 100%!important;
+	margin: 0!important;
+}
+
+html .page-template-default .et_pb_column.et_pb_column_1_4.et_pb_column_single {
+	padding: 50px 5%;
+	background: #f5f5f5;
+}
+
+.page-template-default .et_pb_column.et_pb_column_3_4.et_pb_specialty_column {
+	padding-right: 5%;
+	padding-left: 5%;
+	margin-bottom: 0;
+}
+
+.page-template-default .et_pb_row.et_pb_row_3-4_1-4 {
+	width: 100%;
+}
+
 html #et-main-area {
 	padding-top: 0;
 }
