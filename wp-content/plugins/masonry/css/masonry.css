@@ -160,11 +160,11 @@
 }
 }*/
 
-#sidebar .grid-sizer, #sidebar .grid-item {
+#sidebar .grid-sizer, #sidebar .grid-item, .sidebar-cards .grid-sizer, .sidebar-cards .grid-item {
 	width: 100%;
 }
 
-#sidebar .grid-item {
+#sidebar .grid-item, .sidebar-cards .grid-item {
 	margin-bottom: 20px;
 	border: 1px solid #f5f5f5;
 }

@@ -8,18 +8,11 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 
 <div id="main-content">
 
-<?php if ( ! $is_page_builder_used ) : ?>
 	<div class="page-heading-container">
 		<div class="container">
 			<h1 class="entry-title main_title"><?php the_title(); ?></h1>
 		</div>
 	</div>
-
-	<div class="container">
-		<div id="content-area" class="clearfix">
-			<div id="left-area">
-
-<?php endif; ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 

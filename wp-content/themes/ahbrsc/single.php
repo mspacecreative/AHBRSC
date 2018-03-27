@@ -38,6 +38,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 	<div class="page-heading-container">
 		<div class="container">
 			<h1 class="entry-title main_title"><?php the_title(); ?></h1>
+			<?php et_divi_post_meta(); ?>
 		</div>
 	</div>
 	
@@ -167,7 +168,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 			<?php endwhile; ?>
 			</div> <!-- #left-area -->
 
-			<?php get_sidebar(); ?>
+			<?php get_sidebar('blog-sidebar'); ?>
 		</div> <!-- #content-area -->
 	</div> <!-- .container -->
 	<?php endif; ?>
@@ -175,4 +176,4 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 
 <?php
 
-get_footer();
+get_footer('page');
