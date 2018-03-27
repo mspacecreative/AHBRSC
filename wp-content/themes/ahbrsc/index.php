@@ -11,7 +11,7 @@ get_header();
 	</div>
 </div>
 
-	<div class="container" style="max-width: 1080px;">
+	<div class="container" style="max-width: 1080px; width: 90%;">
 		<div id="content-area" class="clearfix">
 			<div id="instafeed">
 				<div class="grid-sizer"></div>
