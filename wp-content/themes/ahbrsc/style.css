@@ -563,6 +563,11 @@ nav#top-menu-nav {
 	width: 100%;
 }
 
+img.alignright {
+	float: none;
+	width: 50%;
+}
+
 .page-template-page-sidebar .et_pb_column {
 	margin-bottom: 0;
 }
