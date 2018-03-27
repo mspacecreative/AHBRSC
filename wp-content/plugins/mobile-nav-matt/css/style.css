@@ -124,7 +124,8 @@ body .hamburger {
 
 body .hamburger.hamburger--squeeze {
 	position: absolute;
-	right: 5%;
+	left: 20px;
+	padding: 0;
 }
 
 body .hamburger:hover {
